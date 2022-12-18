@@ -4,17 +4,18 @@
 To develop a Django application to store and retrieve data from a database using Object Relational Mapping(ORM).
 
 ## Entity Relationship Diagram
-
+![erd](./images/erd.png)
 
 ## DESIGN STEPS
 
 ### STEP 1:
-
+Fork and clone the repositary in to your IDE.
 ### STEP 2:
-
+Create a django project and an app and a superuser account and run the server.
 ### STEP 3:
-
-
+Modify changes in settings and write ur code on models and admin and run the server.
+### STEP 4:
+Login in to admin using your superuser account and populate the records.
 
 ## PROGRAM
 ```
