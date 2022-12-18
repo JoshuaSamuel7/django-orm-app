@@ -5,7 +5,6 @@ To develop a Django application to store and retrieve data from a database using
 
 ## Entity Relationship Diagram
 
-Include your ER diagram here
 
 ## DESIGN STEPS
 
@@ -15,15 +14,28 @@ Include your ER diagram here
 
 ### STEP 3:
 
-Write your own steps
+
 
 ## PROGRAM
+```
+from django.db import models
+from django.contrib import admin
+# Create your models here.
+class Laptop(models.Model):
+    Productid= models.CharField(max_length=100,primary_key = True)
+    Brandname = models.CharField(max_length=100)
+    Modelname = models.CharField(max_length=80)
+    Os = models.CharField(max_length=100)
+    Colour = models.CharField(max_length=100)
+    Price = models.IntegerField()
 
-Include your code here
-
+    
+class LaptopAdmin(admin.ModelAdmin):
+    list_display = ('Productid','Brandname','Modelname','Os','Colour','Price')
+```
 ## OUTPUT
+![Output](./django-orm-app/images/output.png)
 
-Include the screenshot of your admin page.
+## RESULT:
+Thus we developed a Django application to store and retrieve data from a database using Object Relational Mapping(ORM).
 
-
-## RESULT
