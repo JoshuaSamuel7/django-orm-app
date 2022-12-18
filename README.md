@@ -34,7 +34,7 @@ class LaptopAdmin(admin.ModelAdmin):
     list_display = ('Productid','Brandname','Modelname','Os','Colour','Price')
 ```
 ## OUTPUT
-![Output](./django-orm-app/images/output.png)
+![Output](./images/output.png)
 
 ## RESULT:
 Thus we developed a Django application to store and retrieve data from a database using Object Relational Mapping(ORM).
